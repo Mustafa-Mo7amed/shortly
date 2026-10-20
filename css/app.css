@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   width: var(--default-container-width);
-  margin: auto;
+  margin: 0 auto;
 }
 
 .logo {
@@ -85,4 +85,93 @@
 
 .hero-image-container {
 	width: 45%;
+}
+
+/*******************************/
+/* SHORTEN LINK SECTION */
+/*******************************/
+
+.shorten-section {
+	width: 100%;
+	background-color: var(--grey-1);
+	margin-top: 9.6rem;
+}
+
+.shorten-link-container {
+	display: flex;
+	align-items: center;
+	gap: 2.4rem;
+
+	padding: 4.8rem;
+	border-radius: 11px;
+
+	width: var(--default-container-width);
+	margin: 0 auto;
+	background-color: #302648;
+	background-image: url('../assets/images/bg-shorten-desktop.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+	transform: translateY(-50%);
+}
+
+.link-input-button-wrapper {
+	width: 100%;
+	display: flex;
+	gap: 2.4rem;
+}
+
+.link-input-container {
+	padding: 1.6rem 3.2rem;
+	background-color: #fff;
+	border-radius: 11px;
+	flex: 1;
+}
+
+.link-input-container input {
+	font-size: 2rem;
+	font-weight: 700;
+	border: none;
+	width: 100%;
+}
+
+.link-input-container input::placeholder {
+	color: var(--grey-1);
+}
+
+.link-input-container input:focus {
+	outline: none;
+}
+
+.shorten-btn {
+	font-size: 2rem;
+	border-radius: 11px;
+	flex: 0 0 auto;
+}
+
+/*******************************/
+/* STATISTICS SECTION */
+/*******************************/
+
+.statistics-section {
+	background-color: var(--grey-1);
+}
+
+.statistics-section .title {
+	font-size: 4.4rem;
+	font-weight: 900;
+	letter-spacing: -0.25rem;
+	text-align: center;
+	padding-top: 4.8rem;
+}
+
+.statistics-section .text {
+	max-width: 55rem;
+	margin: 0 auto;
+	margin-top: 2.4rem;
+	font-size: 2rem;
+	text-align: center;
+	color: #808080;
+	font-weight: 700;
 }
