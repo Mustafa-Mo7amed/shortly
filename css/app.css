@@ -3,44 +3,86 @@
 /*******************************/
 
 .navbar {
-    padding: 4.8rem 0;
-    display: flex;
-    align-items: center;
-    width: var(--default-container-width);
-    margin: auto;
+  padding: 4.8rem 0;
+  display: flex;
+  align-items: center;
+  width: var(--default-container-width);
+  margin: auto;
 }
 
 .logo {
-    font-size: 3.6rem;
-    margin-right: 4.8rem;
+  margin-right: 4.8rem;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
-    list-style: none;
-    
-    color: var(--grey-1);
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  list-style: none;
 
-    font-size: 1.4rem;
-    font-weight: 700;
+  color: var(--grey-1);
+
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .nav-btn {
-    color: var(--grey-1);
-    background-color: #fff;
+  color: var(--grey-1);
+  background-color: #fff;
 }
 
 .nav-btn:hover {
-    color: var(--grey-3);
-    background-color: #fff;
-    cursor: pointer;
+  color: var(--grey-3);
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .auth-links {
-    display: flex;
-    list-style: none;
-    gap: 2.4rem;
-    margin-left: auto;
+  display: flex;
+  list-style: none;
+  gap: 2.4rem;
+  margin-left: auto;
+}
+
+/*******************************/
+/* HERO SECTION */
+/*******************************/
+
+.hero-section {
+	display: flex;
+	justify-content: space-between;
+	gap: 8rem;
+	margin-left: var(--default-margin);
+}
+
+.hero-description {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.hero-title {
+	margin-top: 4.8rem;
+	font-size: 9.8rem;
+	letter-spacing: -0.5rem;
+	align-self: flex-start;
+}
+
+.hero-text {
+	width: 65rem;
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: var(--grey-1);
+}
+
+.get-started-btn {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-top: 2.4rem;
+	padding: 1.6rem 3.2rem;
+	width: fit-content;
+}
+
+.hero-image-container {
+	width: 45%;
 }
