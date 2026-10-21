@@ -234,3 +234,31 @@
 	top: 65%;
 	transform: translateX(100%);
 }
+
+/*******************************/
+/* BOOST SECTION */
+/*******************************/
+
+.boost-section {
+	background-color: #302648;
+	background-image: url('../assets/images/bg-boost-desktop.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 6.4rem;
+}
+
+.boost-section .title {
+	color: #fff;
+	font-size: 4.4rem;
+	margin: 0 auto 3.2rem;
+	width: fit-content;
+}
+
+.boost-section .btn {
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+	font-size: 2.4rem;
+	padding: 1.6rem 3.2rem;
+}
