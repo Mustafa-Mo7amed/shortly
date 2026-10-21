@@ -156,9 +156,10 @@
 
 .statistics-section {
 	background-color: var(--grey-1);
+	padding-bottom: 8rem;
 }
 
-.statistics-section .title {
+.statistics-section > .title {
 	font-size: 4.4rem;
 	font-weight: 900;
 	letter-spacing: -0.25rem;
@@ -174,4 +175,62 @@
 	text-align: center;
 	color: #808080;
 	font-weight: 700;
+}
+
+.cards-container {
+	display: flex;
+	gap: 3.2rem;
+	margin: 12.8rem auto;
+	max-width: var(--default-container-width);
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 9px;
+	padding: 0 2.4rem;
+	position: relative;
+}
+
+.card:nth-child(2) {
+	transform: translateY(4rem);
+}
+
+.card:nth-child(3) {
+	transform: translateY(8rem);
+}
+
+.card .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #302648;
+	width: fit-content;
+	height: fit-content;
+	padding: 2rem;
+	border-radius: 50%;
+	transform: translate(15%, -50%);
+}
+
+.card .title {
+	font-size: 2.4rem;
+	padding: 0;
+	margin-bottom: 2.4rem;
+}
+
+.card .description {
+	color: var(--grey-1);
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 2.4rem;
+}
+
+.card .separator {
+	background-color: #2acfcf;
+	width: 3.2rem;
+	height: 1rem;
+	position: absolute;
+	right: 0;
+	top: 65%;
+	transform: translateX(100%);
 }
