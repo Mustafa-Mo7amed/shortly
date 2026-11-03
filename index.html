@@ -18,6 +18,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script src="js/app.js" defer type="module"></script>
 
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
@@ -80,8 +81,20 @@
                 placeholder="Shorten a link here..."
               />
             </div>
-            <button class="btn shorten-btn">Shorten It!</button>
+            <button class="btn shorten-btn">
+              <span>Shorten It!</span>
+              <div class="spinner hidden"></div>
+            </button>
           </div>
+        </div>
+        <div class="short-link-cards-container">
+          <template id="link-card-template">
+            <div class="short-link-card">
+              <p class="original-link"></p>
+              <p class="short-link"></p>
+              <button class="btn copy-btn">Copy</button>
+            </div>
+          </template>
         </div>
       </section>
       <section class="statistics-section">

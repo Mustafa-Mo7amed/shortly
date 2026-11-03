@@ -151,6 +151,35 @@
   flex: 0 0 auto;
 }
 
+.short-link-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.short-link-card {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  width: var(--default-container-width);
+  margin: 0 auto;
+  padding: 2.4rem;
+  border-radius: 9px;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #fff;
+
+  transform: translateY(-50%);
+}
+
+.short-link-card .short-link {
+  margin-left: auto;
+}
+
+.short-link-card .copy-btn {
+  border-radius: 9px;
+}
+
 /*******************************/
 /* STATISTICS SECTION */
 /*******************************/
