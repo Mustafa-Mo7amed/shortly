@@ -172,6 +172,15 @@
   transform: translateY(-50%);
 }
 
+.short-link-card .original-link {
+  flex: 0 1 50%;
+  max-width: 50%;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .short-link-card .short-link {
   margin-left: auto;
 }
