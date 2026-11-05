@@ -75,6 +75,7 @@ Max: 999px
     --grey-2: #9e9aa7;
     --grey-3: #35323e;
     --grey-4: #232127;
+    --error-state: #f46262;
 }
 
 * {

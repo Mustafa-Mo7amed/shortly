@@ -141,6 +141,14 @@
   color: var(--grey-1);
 }
 
+.shorten-link-container.input-error .link-input-container {
+  box-shadow: 0 0 3px 2px var(--error-state);
+}
+
+.shorten-link-container.input-error input::placeholder {
+  color: var(--error-state);
+}
+
 .link-input-container input:focus {
   outline: none;
 }
@@ -149,6 +157,15 @@
   font-size: 2rem;
   border-radius: 11px;
   flex: 0 0 auto;
+}
+
+.shorten-link-container.input-error p {
+  display: block;
+  position: absolute;
+  bottom: 1.6rem;
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--error-state);
 }
 
 .short-link-cards-container {

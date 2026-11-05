@@ -1,6 +1,7 @@
 import { shortenUrl } from "./api.js";
 
 const shortenBtn = document.querySelector(".shorten-btn");
+const shortenLinkContainer = document.querySelector(".shorten-link-container");
 
 function toggleShortenBtnLoadingSpinner(hide) {
   const shortenBtnText = document.querySelector(".shorten-btn span");
@@ -19,7 +20,6 @@ function addShortLinkCard(url, shortUrl) {
   const cardClone = template.content.cloneNode(true);
   cardClone.querySelector(".original-link").textContent = url;
   cardClone.querySelector(".short-link").textContent = shortUrl.link;
-  
 
   const copyLinkBtn = cardClone.querySelector(".copy-btn");
   copyLinkBtn.addEventListener("click", (event) => {
@@ -33,13 +33,25 @@ function addShortLinkCard(url, shortUrl) {
 
 shortenBtn.addEventListener("click", async () => {
   const url = document.getElementById("shorten-link-input").value;
+  if (url.trim() === "") {
+    shortenLinkContainer.classList.add("input-error");
+    return;
+  }
+  shortenLinkContainer.classList.remove("input-error");
 
   toggleShortenBtnLoadingSpinner(true);
 
   const shortUrl = await shortenUrl(url);
   addShortLinkCard(url, shortUrl);
 
-  document.getElementById('shorten-link-input').value = '';
+  document.getElementById("shorten-link-input").value = "";
 
   toggleShortenBtnLoadingSpinner(false);
+});
+
+const urlInput = document.getElementById("shorten-link-input");
+urlInput.addEventListener("input", () => {
+  if (urlInput.value.trim() !== "") {
+    shortenLinkContainer.classList.remove("input-error");
+  }
 });
